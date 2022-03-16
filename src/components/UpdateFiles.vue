@@ -43,7 +43,7 @@
         const form = new FormData()// FormData 对象
         form.append('file', fileObj)// 文件对象  'upload'是后台接收的参数名
         axios({
-          url: 'http://192.168.0.109:8080/upload',
+          url: 'http://127.0.0.1:8080/upload',
           data: form,
           method: 'POST',
           contentType: 'multipart/form-data',

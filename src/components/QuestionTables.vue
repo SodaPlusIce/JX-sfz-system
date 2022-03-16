@@ -67,7 +67,7 @@ export default {
       };
       xhttp.open(
         "GET",
-        "http://192.168.0.109:8080/checkInputSheetFormat?time=" +
+        "http://127.0.0.1:8080/checkInputSheetFormat?time=" +
           String(this.padLeft(this.value2.getMonth() + 1, 2)) +
           this.value2.getDate(),
         true

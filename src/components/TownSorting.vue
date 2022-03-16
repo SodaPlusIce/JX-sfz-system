@@ -90,7 +90,7 @@ export default {
 
       //发送get请求
       const api =
-        "http://192.168.0.109:8080/selectData";
+        "http://127.0.0.1:8080/selectData";
       this.axios.get(api).then((response) => {
         if (response.data == "810") {
           this.$message.success("已完成乡镇分拣！");
@@ -114,7 +114,7 @@ export default {
           return config;
         });
       }
-      const api ="http://192.168.0.109:8080/NVP/getNVPS";
+      const api ="http://127.0.0.1:8080/NVP/getNVPS";
       this.axios.get(api).then((response) => {
         if (response.data.status == "820") {
           console.log(response.data.msg);

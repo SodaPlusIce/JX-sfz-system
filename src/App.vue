@@ -56,7 +56,7 @@ export default {
     };
   },
   created() {
-    this.ifshow00 = false; /////////////////////////
+    this.ifshow00 = true; /////////////////////////
     this.ifshow01 = false;
     this.ifshow02 = false;
     this.ifshow1 = false;
@@ -65,7 +65,7 @@ export default {
     this.ifshow4 = false;
     this.ifshow5 = false;
     this.ifshow6 = false;
-    this.ifshow_login = true; //////////////////////
+    this.ifshow_login = false; //////////////////////
   },
   mounted() {
     bus.$on("navi",(val)=>{

@@ -82,7 +82,7 @@ export default {
 
       //发送get请求
       const api =
-        "http://192.168.0.109:8080/login?ID=" +
+        "http://127.0.0.1:8080/login?ID=" +
         this.user.username +
         "&" +
         "password=" +
@@ -110,7 +110,7 @@ export default {
 
       //发送get请求
       const api =
-        "http://192.168.0.109:8080/login?id=" +
+        "http://127.0.0.1:8080/login?id=" +
         this.user.username +
         "&" +
         "password=" +

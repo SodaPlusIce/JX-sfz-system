@@ -259,7 +259,7 @@ export default {
           return config;
         });
       }
-      const api = "http://192.168.0.109:8080/NVP/getVDPS";
+      const api = "http://127.0.0.1:8080/NVP/getVDPS";
       this.axios.get(api).then((response) => {
         if (response.data.status == "840") {
           this.tableData = response.data.msg; //可以将json字符串转换成json对象
@@ -277,7 +277,7 @@ export default {
         });
       }
       const api =
-        "http://192.168.0.109:8080/NVP/updateNUC?id="+ this.tableData[index].ID +"&time="+this.value+"&nures="+this.radio2;
+        "http://127.0.0.1:8080/NVP/updateNUC?id="+ this.tableData[index].ID +"&time="+this.value+"&nures="+this.radio2;
       this.axios.get(api).then((response) => {
         if (response.data == "850") {
           this.$message.success("操作成功！");
@@ -320,7 +320,7 @@ export default {
         });
       }
       const api =
-        "http://192.168.0.109:8080/NVP/delPER?id=" +
+        "http://127.0.0.1:8080/NVP/delPER?id=" +
         this.tableData[index].ID;
       this.axios.get(api).then((response) => {
         if (response.data == "860") {

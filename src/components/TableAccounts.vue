@@ -83,7 +83,7 @@ export default {
         });
       }
       //发送get请求
-      const api = "http://192.168.0.109:8080/userManager/getUsers";
+      const api = "http://127.0.0.1:8080/userManager/getUsers";
       this.axios.get(api).then((response) => {
         if (response.data.status == "780") {
           //得到所有的账户信息
@@ -110,7 +110,7 @@ export default {
       }
       //发送get请求
       const api =
-        "http://192.168.0.109:8080/userManager/modifyInfo?id=" +
+        "http://127.0.0.1:8080/userManager/modifyInfo?id=" +
         that.tableData[index].ID +
         "&info=" +
         this.form.info;
@@ -155,7 +155,7 @@ export default {
         });
       }
       //发送get请求
-      const api = "http://192.168.0.109:8080/userManager/del?id=" + name;
+      const api = "http://127.0.0.1:8080/userManager/del?id=" + name;
       this.axios.get(api).then((response) => {
         if (response.data == "770") {
           that.$message.success("账号 " + name + " 已删除！");

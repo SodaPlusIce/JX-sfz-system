@@ -135,7 +135,7 @@ export default {
           return config;
         });
       }
-      const api = "http://192.168.0.109:8080/NVP/getNVPS";
+      const api = "http://127.0.0.1:8080/NVP/getNVPS";
       this.axios.get(api).then((response) => {
         if (response.data.status == "820") {
           //得到所有的账户信息
@@ -169,7 +169,7 @@ export default {
           return config;
         });
       }
-      const api = "http://192.168.0.109:8080/NVP/updateVerified?id="+this.tableData[index].ID;
+      const api = "http://127.0.0.1:8080/NVP/updateVerified?id="+this.tableData[index].ID;
       this.axios.get(api).then((response) => {
         if (response.data == "830") {
           this.$message.success("操作成功！");
